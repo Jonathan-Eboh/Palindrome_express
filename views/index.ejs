@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Palindrome Checker!</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <!-- adding delete -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h2>Type in a word and lets see if its a palnindrome!</h2>
+    <!-- <input type="text" placeholder="Lets see what happens..."> -->
+
+    <form action="/guess" method="POST">
+        <input type="text" placeholder="Lets see what happens..." name='msg'>
+        <button type="submit">Check Word!</button>
+    </form>
+
+
+    <h3>Searched words!</h3>
+    <ul class="palindromeWords">
+        <% for(var i=0; i<Palindromes.length; i++) {%>
+
+
+
+            <li class="message <%= Palindromes[i].priority %>">
+                <span>
+                    <%= Palindromes[i].msg %>
+                </span>
+                <span>
+                    <%= Palindromes[i].palindrome %>
+                </span>
+                <span>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </span>
+            </li>
+
+            <% } %>
+    </ul>
+
+
+    <script type="text/javascript" src="main.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

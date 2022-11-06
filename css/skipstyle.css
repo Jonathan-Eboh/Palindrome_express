@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+   
+   background: linear-gradient(to bottom, black, darkgreen, black);
+   color: white;
+   text-align: center;
+}
+
+h2 {
+  color: red;
+}
